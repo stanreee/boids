@@ -1,8 +1,7 @@
 # boids
  My take on the artificial life/intelligence program.
-
- ![demo]https://user-images.githubusercontent.com/77902731/109406892-ace28800-794a-11eb-82e2-4d7a19685429.mp4
-
+ 
+ ![caf0a82a53e11c6b29e20cc34b2fbf09](https://user-images.githubusercontent.com/77902731/109407235-0fd51e80-794d-11eb-994c-01dcd47fa914.gif)
 
 # background
  Boids is an artificial life program developed by Craig Reynolds. The program consists of flying entities, 'boids', that follow three rules:
