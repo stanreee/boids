@@ -1,0 +1,70 @@
+separation stuff:
+
+/*float curRotation = transform.rotation.eulerAngles.z;
+                            float newRotationFloat = Mathf.Lerp(curRotation, curRotation + 7.0f, 0.2f);
+                            Quaternion newRotation = Quaternion.Euler(0, 0, newRotationFloat);
+                            transform.rotation = newRotation;*/
+
+//Debug.Log(desiredDirection);
+
+                            //float curRotation = transform.rotation.eulerAngles.z;
+                            //transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, curRotation + 10.0f), 3.0f * Time.deltaTime);
+
+
+
+alignment stuff:
+
+/*Vector3 totalHeading = Vector2.zero;
+
+            float averageHeadingX = 0.0f;
+            float averageHeadingY = 0.0f;
+
+            foreach(Collider2D c in colliders) {
+                Boid b = c.gameObject.GetComponent<Boid>();
+                averageHeadingX += b.transform.right.x;
+                averageHeadingY += b.transform.right.y;
+            }
+
+            averageHeadingX /= colliders.Length;
+            averageHeadingY /= colliders.Length;
+
+            float newHeadingX = Mathf.Lerp(transform.right.x, averageHeadingX, 0.5f);
+            float newHeadingY = Mathf.Lerp(transform.right.y, averageHeadingY, 0.5f);
+
+            newHeading = newHeading + new Vector2(newHeadingX, newHeadingY); // desired heading
+
+            //print(averageHeading);*/
+
+
+cohesion stuff:
+
+
+
+            /*float averagePositionX = 0.0f;
+            float averagePositionY = 0.0f;
+
+            foreach(Collider2D c in colliders) {
+                averagePositionX += c.transform.position.x;
+                averagePositionY += c.transform.position.y;
+            }
+
+            averagePositionX /= colliders.Length;
+            averagePositionY /= colliders.Length;
+
+            float newHeadingX = Mathf.Lerp(transform.right.x, averagePositionX, 0.5f);
+            float newHeadingY = Mathf.Lerp(transform.right.y, averagePositionY, 0.5f);
+
+            Debug.DrawRay(transform.position, new Vector3(newHeadingX, newHeadingY), Color.magenta);
+
+            newHeading += new Vector3(newHeadingX, newHeadingY);*/
+            //if(cluster != null) {
+                /*Vector2 centerMass = cluster.clusterCenterOfMass;
+                Vector2 rotate = Vector3.RotateTowards(transform.right, centerMass, 7.0f * Time.deltaTime, 0.0f);
+                rotate.Normalize();
+                newHeading += new Vector3(rotate.x, rotate.y, 0);*/
+
+                /*Vector2 vectorToTarget = cluster.clusterCenterOfMass - transform.position;
+                float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
+                Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+                transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * 5f);
+            }*/
